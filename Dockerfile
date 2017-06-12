@@ -1,6 +1,6 @@
 FROM bluepine/bigdata-alpine-base
 
-MAINTAINER Subham Rakshit
+MAINTAINER Song Wei
 
 ENV ELASTICSEARCH_HOME="/opt/elasticsearch" \
     ELASTICSEARCH_VERSION="1.5.1" \
@@ -17,3 +17,5 @@ RUN chmod +x /opt/elasticsearch-download.sh \
     && adduser -S -G elasticsearch elasticsearch \
     && chown elasticsearch:elasticsearch -R /opt/elasticsearch* \
     && chmod 754 /opt/elasticsearch*
+
+User elasticsearch
