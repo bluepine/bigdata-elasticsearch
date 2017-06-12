@@ -16,6 +16,7 @@ RUN chmod +x /opt/elasticsearch-download.sh \
     && addgroup elasticsearch \
     && adduser -S -G elasticsearch elasticsearch \
     && chown elasticsearch:elasticsearch -R /opt/elasticsearch* \
-    && chmod 754 /opt/elasticsearch*
+    && chmod 754 /opt/elasticsearch* \
+    && sync
 
 USER elasticsearch
