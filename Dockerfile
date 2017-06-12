@@ -18,4 +18,4 @@ RUN chmod +x /opt/elasticsearch-download.sh \
     && chown elasticsearch:elasticsearch -R /opt/elasticsearch* \
     && chmod 754 /opt/elasticsearch*
 
-User elasticsearch
+USER elasticsearch
