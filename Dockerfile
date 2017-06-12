@@ -20,3 +20,4 @@ RUN chmod +x /opt/elasticsearch-download.sh \
     && sync
 
 USER elasticsearch
+CMD ["/opt/elasticsearch/bin/elasticsearch"]
